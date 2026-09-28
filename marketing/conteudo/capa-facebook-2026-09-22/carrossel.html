@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&family=Poppins:wght@700;800;900&display=swap" rel="stylesheet">
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: "Inter", sans-serif; }
+
+  .slide {
+    position: relative;
+    width: 1640px;
+    height: 624px;
+    overflow: hidden;
+    background: #000;
+    display: flex;
+  }
+
+  .slide .tile {
+    position: relative;
+    flex: 1;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .slide .tile img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+
+  .scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      to top,
+      rgba(6, 6, 6, 0.97) 0%,
+      rgba(6, 6, 6, 0.85) 30%,
+      rgba(6, 6, 6, 0.25) 62%,
+      rgba(6, 6, 6, 0.05) 78%,
+      rgba(6, 6, 6, 0) 100%
+    );
+  }
+
+  .side-scrim {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+      90deg,
+      rgba(6, 6, 6, 0.55) 0%,
+      rgba(6, 6, 6, 0.1) 22%,
+      rgba(6, 6, 6, 0) 45%
+    );
+  }
+
+  .content {
+    position: absolute;
+    left: 56px;
+    bottom: 40px;
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    z-index: 5;
+  }
+
+  .logo-badge {
+    display: flex;
+    align-items: center;
+    background: rgba(10, 10, 10, 0.9);
+    border: 3px solid #f5821f;
+    border-radius: 60px;
+    padding: 10px 22px;
+    flex-shrink: 0;
+  }
+
+  .logo-badge img {
+    height: 52px;
+    display: block;
+  }
+
+  .text-block h1 {
+    font-family: "Poppins", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 1.05;
+    color: #fff;
+    letter-spacing: -0.01em;
+  }
+
+  .text-block h1 .accent { color: #f5821f; }
+
+  .text-block p {
+    margin-top: 8px;
+    font-weight: 700;
+    font-size: 22px;
+    color: #e6e6e6;
+    letter-spacing: 0.01em;
+  }
+
+  .text-block p .dot { color: #f5821f; }
+</style>
+</head>
+<body>
+
+<div class="slide">
+  <div class="tile"><img src="assets/foto1.jpg" alt=""></div>
+  <div class="tile"><img src="assets/foto2.jpg" alt=""></div>
+  <div class="tile"><img src="assets/foto3.jpg" alt=""></div>
+  <div class="tile"><img src="assets/foto4.jpg" alt=""></div>
+
+  <div class="scrim"></div>
+  <div class="side-scrim"></div>
+
+  <div class="content">
+    <div class="logo-badge">
+      <img src="assets/logo.png" alt="Total Impacto">
+    </div>
+    <div class="text-block">
+      <h1>Comunicação <span class="accent">visual</span> completa</h1>
+      <p>Fachadas <span class="dot">•</span> Toldos e Coberturas <span class="dot">•</span> Letreiros <span class="dot">•</span> Placas <span class="dot">•</span> Adesivos</p>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

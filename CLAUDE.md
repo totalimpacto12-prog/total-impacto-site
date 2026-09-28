@@ -1,11 +1,68 @@
-# MazyOS — Sistema operacional do negócio
+# Total Impacto — MazyOS
 
-Sua empresa roda em cima desse arquivo. Aqui ficam as regras de operação
-do MazyOS — como o Claude lê o contexto, aprende com correções, mantém
-tudo atualizado e cria skills novas conforme a operação evolui.
+> Workspace do site institucional da **Total Impacto**, empresa de comunicação
+> visual (fachadas, toldos e coberturas, ACM, sinalização). Quem opera o
+> MazyOS aqui é o Kroos, criando o site *para* a Total Impacto — a Total
+> Impacto é o negócio final representado por este workspace, não uma agência
+> prestando serviço a terceiros.
 
-Esse arquivo é editável. Quando o `/instalar` rodar, ele complementa o
-final dessa página com as regras específicas do seu negócio.
+## O que é esse workspace
+
+Site institucional e presença digital da Total Impacto. Cada pasta guarda uma
+frente do trabalho — conteúdo, identidade, dados de apoio, saídas prontas.
+
+**Estrutura de pastas:**
+- `_memoria/` — quem é a Total Impacto, como falamos, foco atual
+- `identidade/` — marca aplicada em tudo que o sistema gera (site, posts, materiais)
+- `marketing/` — campanhas, conteúdo, mídia paga
+- `dados/` — arquivos a analisar
+- `saidas/` — documentos pontuais
+- `scripts/` — scripts de apoio
+- `templates/` — modelos reaproveitáveis
+
+*(Pastas como `comercial/`, `financeiro/`, `rh/` não existem ainda — criar
+quando a operação realmente precisar delas.)*
+
+## Sobre a empresa
+
+Total Impacto é uma empresa de **comunicação visual**: fachadas, toldos e
+coberturas, painéis ACM e sinalização. Atende, em geral, lojistas e empresas
+que querem renovar o visual de suas lojas, além de clientes pontuais que
+precisam de comunicação visual.
+
+Hoje é o Kroos sozinho operando, com o Claude Code como assistente — sem
+setores formalizados.
+
+## O que mais fazemos aqui
+
+- Construir e manter o site institucional
+- Criar presença no Instagram e no Google Meu Negócio
+- Produzir conteúdo de marketing e materiais visuais
+
+## Tom de voz
+
+Formal e profissional. Expressões como "caro cliente" fazem parte desse tom e
+devem ser usadas normalmente — não evitar.
+
+Evitar: informalidade excessiva, gírias, jargão de marketing genérico
+("sinergia", "alavancar").
+
+## Regras do sistema
+
+- Documentos pontuais vão em `saidas/`
+- Arquivos a analisar vão em `dados/`
+- Ajustar esta seção conforme setores/pastas novas forem criados
+
+## Ferramentas conectadas
+
+- [ ] Notion
+- [ ] Gmail
+- [ ] Google Calendar
+- [ ] Google Ads
+- [ ] Meta Ads
+- [ ] Slack
+
+*(Marcar conforme for instalando os MCPs)*
 
 ---
 
@@ -14,7 +71,7 @@ final dessa página com as regras específicas do seu negócio.
 No início de toda conversa, ler os seguintes arquivos (quando existirem
 e estiverem preenchidos):
 
-1. `_memoria/empresa.md` — quem é o usuário, o que faz, como funciona o negócio
+1. `_memoria/empresa.md` — quem é a Total Impacto, o que faz, como funciona o negócio
 2. `_memoria/preferencias.md` — tom de voz, estilo de escrita, o que evitar
 3. `_memoria/estrategia.md` — foco atual, prioridades, prazos
 
@@ -22,7 +79,7 @@ Usar essas informações como base pra qualquer resposta ou decisão. Ao
 sugerir prioridades, formatos ou abordagens, considerar o foco atual
 descrito em `estrategia.md`.
 
-Pra qualquer tarefa visual (carrossel, post, landing page), consultar
+Pra qualquer tarefa visual (carrossel, post, landing page, site), consultar
 `identidade/design-guide.md` como referência de estilo.
 
 Não é necessário listar o que foi lido nem confirmar a leitura. Apenas
